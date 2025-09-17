@@ -22,7 +22,7 @@ The website consists of:
 
 ## Deployment
 The website is hosted on **GitHub Pages**:  
-👉 [Live Site Link](https://<your-username>.github.io/<your-repo-name>/)  
+👉 [Live Site Link](https://elyasirankhah.github.io/Personal_Website/)  
 
 ## Next Steps
 
