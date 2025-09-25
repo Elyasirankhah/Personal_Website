@@ -100,11 +100,36 @@ footer address a:hover { text-decoration: underline; }
 
 .contianer { max-width: 960px; margin: 0 auto }
 
-header { position: sticky; top: 0; z-index: 10; padding-left: 64px; } 
-.brand { position: absolute; left: 20px; top: 8px; display: block; }
-.brand img { height: 70px; width:auto; background: #fff; border: 1px solid #ddd; border-radius: 6px; padding: 3px; box-shadow: 0 1px 3px rgba(0,0,0,0.15); }
+header{
+  padding-left: 120px !important;   
+  display: flex;                    
+  align-items: center;
+  justify-content: center;
+}
 
-@media (max-width: 760px) { header { padding-left: 80px; } .brand img { height: 50px; } }
+.brand{
+  position: absolute;
+  left: 20px;
+  top: 8px;
+  display: block;
+}
+
+.brand img{
+  height: 80px !important;   
+  width: auto !important;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  padding: 3px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.15);
+}
+
+/* phone */
+@media (max-width:760px){
+  header{ padding-left: 80px !important; }
+  .brand img{ height: 44px !important; }
+}
+
 
 
 
