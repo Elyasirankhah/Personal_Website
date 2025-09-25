@@ -1,0 +1,103 @@
+* { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; }
+body {
+  font-family: -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+  color: #222;
+  background: #f7f7fa;
+  line-height: 1.5;
+}
+a { color: inherit; text-decoration: none; }
+.container { max-width: 1200px; margin: 0 auto; padding: 14px 16px; }
+
+/* ===== header ===== */
+header {
+  position: sticky; top: 0; z-index: 10;
+  background: #ffffff;
+  border-bottom: 1px solid #e9edf3;
+  box-shadow: 0 2px 6px rgba(0,0,0,.06);
+}
+header nav { 
+  text-align: center;           
+  padding: 10px 0;
+}
+
+header nav a {
+  text-transform: lowercase;    
+  font-weight: bold;
+  font-size: larger;
+  padding: 10px 0;
+  margin: 0 12px;               
+  border-bottom: 2px solid transparent;
+  border-radius: 6px;          
+}
+
+header nav a:hover {
+  background: rgba(0,0,0,0.05);
+  text-decoration: none;        
+}
+
+
+header nav a[aria-current="page"] {
+  border-color: #222;
+  background: rgba(0,0,0,0.06);
+}
+
+
+#hero {
+  margin-top: 40px;
+  margin-left: 20px;   
+  margin-right: 20px;
+  text-align: center;  
+}
+
+.center { display: block; margin-left: auto; margin-right: auto; }
+
+.hero-img {
+  max-width: 220px;     
+  width: 60%;
+  border-radius: 10px;  
+  box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+}
+
+h1 {
+  color: #0f172a;
+  font-size: 2.2rem;
+  font-style: italic;
+  font-variant: small-caps;
+  text-align: center;          
+  text-shadow: 1px 1px 0 #ddd; 
+}
+h2 {
+  color: #1f2937;
+  font-size: 1.6rem;
+  font-variant: small-caps;
+  margin-top: 0.2rem;
+}
+
+ul { padding-left: 20px; }
+li { margin-bottom: 8px; }
+
+table { width: 100%; border-collapse: collapse; margin: 10px 0; }
+td, th { border: 1px solid #e5e7eb; padding: 10px; text-align: left; }
+
+/* ===== footer ===== */
+footer {
+  border-top: 1px solid #e9edf3;
+  background: #fbfcff;
+  color: #555;
+  margin-top: 60px;
+}
+footer .container { padding-top: 18px; padding-bottom: 18px; }
+footer address { font-style: normal; }
+footer address a { color: #0f766e; }
+footer address a:hover { text-decoration: underline; }
+
+@media (max-width: 760px) {
+  header nav a { display: inline-block; margin: 6px 6px; font-size: 1rem; }
+  .hero-img { width: 80%; max-width: 260px; }
+  .container { padding: 12px; }
+}
+
+.contianer { max-width: 960px; margin: 0 auto }
+
+
