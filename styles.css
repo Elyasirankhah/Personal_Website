@@ -101,10 +101,11 @@ footer address a:hover { text-decoration: underline; }
 .contianer { max-width: 960px; margin: 0 auto }
 
 header { position: sticky; top: 0; z-index: 10; padding-left: 64px; } 
-.brand { position: absolute; left: 12px; top: 8px; display: black; }
-.brand img { height: 45px; width:auto; background: #fff; border: 1px solid #ddd; border-radius: 6px; padding: 3px; box-shadow: 0 1px 3px rgba(0,0,0,0.15); }
+.brand { position: absolute; left: 20px; top: 8px; display: black; }
+.brand img { height: 60px; width:auto; background: #fff; border: 1px solid #ddd; border-radius: 6px; padding: 3px; box-shadow: 0 1px 3px rgba(0,0,0,0.15); }
 
 @media (max-width: 760px) { header { padding-left: 58px; } brand img { height: 30px; } }
+
 
 
 
