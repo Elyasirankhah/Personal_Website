@@ -9,7 +9,6 @@
 
     <header>
 		<a class="brand" href="https://www.uml.edu" target="_blank" rel="noopener">
-        <img src="Umass-Lowell_logo_with_title.svg.png" alt="UMass Lowell logo">
       	</a>
 		<nav aria-label="main">
   			<a href="index.html" aria-current="page">Home</a>
@@ -33,14 +32,16 @@
     <input type="radio" name="projSlides" id="proj-slide-4" hidden>
     <input type="radio" name="projSlides" id="proj-slide-5" hidden>
       
-    <section class="proj-slider" aria-label="Project slideshow">  
-      <figure class="proj-slide">
-      <img src="Figures/exoskeleton.jpeg" alt="Rehabilitation exoskeleton hand prototype on workbench">
+    <div class="proj-frame">
+  <section class="proj-slider" aria-label="Project slideshow">
+    <figure class="proj-slide">
+      <img src="Figures/exoskeleton.jpeg" alt="Rehabilitation exoskeleton hand prototype on a workbench">
       <figcaption>
         <h3>Rehab Exoskeleton (Patent)</h3>
         <p>Designing a hand exoskeleton with IMU feedback for rehab training.</p>
-        <p><a class="btn btn-outline" href="https://example.com/patent"target="_blank" rel="noopener">Read More</a></p>
+        <p><a class="btn btn-outline" href="#" target="_blank" rel="noopener">Read More</a></p>
       </figcaption>
+    </figure>
 
         <!------------------->
         <figure class="proj-slide">
@@ -50,6 +51,7 @@
         <p>K–8 outreach at UMass Lowell: interactive game to teach AI concepts through play.</p>
         <p><a class="btn btn-outline" href="https://example.com/patent"target="_blank" rel="noopener">Read More</a></p>
       </figcaption>
+	</figure>
           
         <!------------------->
 
@@ -60,7 +62,7 @@
         <p>iOS/Android apps connected to MUSE 2 to receive and visualize real-time brain signals.</p>
         <p><a class="btn btn-outline" href="https://example.com/patent"target="_blank" rel="noopener">Read More</a></p>
       </figcaption>
-
+	</figure>
         <!------------------->
           
         <figure class="proj-slide">
@@ -70,7 +72,7 @@
         <p>Web-based AI assistant for international graduate students (OPT/CPT, visa, resources).</p>
         <p><a class="btn btn-outline" href="https://example.com/patent"target="_blank" rel="noopener">Read More</a></p>
       </figcaption>
-
+	</figure>
         <!------------------->
 
         <figure class="proj-slide">
@@ -83,13 +85,19 @@
     </figure>
     </section>
 
-  <div class="proj-dots">
-    <label for="proj-slide-1" aria-label="Show slide 1">●</label>
-    <label for="proj-slide-2" aria-label="Show slide 2">●</label>
-    <label for="proj-slide-3" aria-label="Show slide 3">●</label>
-    <label for="proj-slide-4" aria-label="Show slide 4">●</label>
-    <label for="proj-slide-5" aria-label="Show slide 5">●</label>
+  <div class="proj-arrows" aria-hidden="true">
+    <label class="arrow prev s1" for="proj-slide-5"></label>
+    <label class="arrow next s1" for="proj-slide-2"></label>
+    <label class="arrow prev s2" for="proj-slide-1"></label>
+    <label class="arrow next s2" for="proj-slide-3"></label>
+    <label class="arrow prev s3" for="proj-slide-2"></label>
+    <label class="arrow next s3" for="proj-slide-4"></label>
+    <label class="arrow prev s4" for="proj-slide-3"></label>
+    <label class="arrow next s4" for="proj-slide-5"></label>
+    <label class="arrow prev s5" for="proj-slide-4"></label>
+    <label class="arrow next s5" for="proj-slide-1"></label>
   </div>
+</div>
 
           
 
@@ -129,6 +137,7 @@
     </footer>
   </body>
 </html>
+
 
 
 
