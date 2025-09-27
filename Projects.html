@@ -9,8 +9,8 @@
 
     <!-- Navigation -->
     <nav aria-label="main">
-      <a href="index.html" aria-current="page">Home</a>
-      <a href="Projects.html">Projects</a>
+      <a href="index.html">Home</a>
+      <a href="Projects.html" aria-current="page">Projects</a>
       <a href="Publication.html">Publication</a>
       <a href="contact.html">Contact info</a>
     </nav>
@@ -21,6 +21,25 @@
     <main class="container">
       <h2>Projects</h2>
 
+    <!-- Adding slidshow here as a WOW feature -->
+
+    <input type="radio" name="projSlides" id="proj-slide-1" checked hidden>
+    <input type="radio" name="projSlides" id="proj-slide-2" hidden>
+    <input type="radio" name="projSlides" id="proj-slide-3" hidden>
+    <section class="proj-slider" aria-label="Project slideshow">  
+      <figure class="proj-slide">
+      <img src="img/projects/exoskeleton.jpg" alt="Rehabilitation exoskeleton hand prototype on workbench">
+      <figcaption>
+
+        <h3>Rehab Exoskeleton (Patent)</h3>
+        <p>Designing a hand exoskeleton with IMU feedback for rehab training.</p>
+        <p><a class="btn btn-outline" href="https://example.com/patent"target="_blank" rel="noopener">Read More</a></p>
+      </figcaption>
+
+
+
+
+      
       <ul class="pub-list">
         <li><strong>Patent: Designing Rehabilitation Exoskeleton Robotic Hand Based on IMU Feedback</strong><br>
           E. Irankhah, I. Bagheri, S. Alizadeh, S. Salehzehi, M. Kamali<br>
@@ -51,13 +70,10 @@
     <footer id="contact">
       <div class="container">
         <p>&copy; 2025 Elyas Irankhah</p>
-        <address>
-          <a href="mailto:Elyas_irankhah@student.uml.edu">Elyas_irankhah@student.uml.edu</a> ·
-          <a href="https://www.linkedin.com/in/elyas-irankhah/" target="_blank" rel="noopener">LinkedIn</a>
-        </address>
       </div>
     </footer>
   </body>
 </html>
+
 
 
