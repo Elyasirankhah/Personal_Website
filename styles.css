@@ -200,6 +200,14 @@ input[type="radio"] {display:none;}
 
 
 
+/*Publication.......*/
+.pub-list {max-width:860px; margin:0 auto 40px; padding-left:1.25rem;}
+.pub-list li {margin:14px 0 20px; line-height:1.45;}
+.pub-list li strong {display:block; color:#0f172a; margin:0 0 2px;}
+.pub-list li em {display:block; color:#6b7280; font-style:normal; font-size:.95rem; margin:2px 0 6px;}
+.pub-list a {color:#0f766e; text-decoration:underline;}
+.pub-list a:hover {text-decoration:none;}
+
 
 
 
