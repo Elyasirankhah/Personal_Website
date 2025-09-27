@@ -156,8 +156,8 @@ header{
 }
 
 .proj-frame {width: min(560px,94vw); margin:16px auto; border:2px solid black; background:#fff; position:relative; overflow:hidden;}
-.proj-slider {display:flex; transition:transform .4s ease; width:500%;}
-.proj-slide {flex:0 0 100%; text-align:center;}
+.proj-slider {display:block; white-space:nowrap; font-size:0; transition:transform .4s ease;}
+.proj-slide {display:inline-block; width:100%; vertical-align:top; text-align:center; font-size:initial;}
 .proj-slide img {display:block; margin:16px auto 8px; max-width:420px; width:90%; border-radius:10px; box-shadow:0 6px 20px rgba(0,0,0,.15); animation:fadeIn 0.6s ease-in;}
 .proj-slide figcaption {text-align:center; margin:6px 0 14px;}
 
@@ -189,6 +189,7 @@ input[type="radio"] {display:none;}
 #proj-slide-5:checked ~ .proj-frame .proj-arrows .s5 {display:block;}
 
 @keyframes fadeIn {from {opacity:0;} to {opacity:1;}}
+
 
 
 
