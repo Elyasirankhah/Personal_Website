@@ -156,8 +156,8 @@ header{
 }
 
 .proj-frame {width:min(560px,94vw); height:560px; margin:16px auto; border:2px solid #000; background:#fff; position:relative; overflow:hidden;}
-.proj-slider {display:flex; width:500%; transition:margin-left .4s ease;}
-.proj-slide  {flex:0 0 20%; height:100%; display:flex; flex-direction:column; align-items:center; justify-content:flex-start; padding:12px 0 16px; box-sizing:border-box; text-align:center;}
+.proj-slider {display:flex; width:500%; transition:margin-left .4s ease; gap:0;}
+.proj-slide  {flex:0 0 20%; height:100%; display:flex; flex-direction:column; align-items:center; justify-content:flex-start; padding:12px 0 16px; box-sizing:border-box; text-align:center; margin:0;}
 
 .proj-slide img {width:90%; max-width:420px; height:280px; object-fit:cover; border-radius:10px; box-shadow:0 6px 20px rgba(0,0,0,.15); margin:16px auto 8px; animation:fadeIn .6s ease-in;}
 
@@ -195,6 +195,7 @@ input[type="radio"] {display:none;}
 #proj-slide-5:checked ~ .proj-frame .proj-arrows .s5 {display:block;}
 
 @keyframes fadeIn {from{opacity:0;} to{opacity:1;}}
+
 
 
 
