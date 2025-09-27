@@ -155,17 +155,15 @@ header{
   .brand img{ height: 44px !important; }
 }
 
-.proj-frame {width: min(560px,94vw); margin:16px auto; border:2px solid black; background:#fff; position:relative; overflow:hidden;}
-.proj-slider {display:flex; width:500%; transition:margin-left .4s ease;} 
-.proj-slide  {flex:0 0 20%; text-align:center;}                          
-.proj-slide img {display:block; margin:16px auto 8px; max-width:420px; width:90%; border-radius:10px; box-shadow:0 6px 20px rgba(0,0,0,.15); animation:fadeIn 0.6s ease-in;}
-.proj-slide figcaption {text-align:center; margin:6px 0 14px;}
+.proj-frame {width: min(560px,94vw); height:560px; margin:16px auto; border:2px solid #000; background:#fff; position:relative; overflow:hidden;}
+.proj-slider {display:flex; width:500%; transition:margin-left .4s ease;}
+.proj-slide {flex:0 0 20%; display:flex; flex-direction:column; align-items:center; justify-content:flex-start; height:100%; padding:12px 0 16px; box-sizing:border-box; text-align:center;}
+.proj-slide img {width:90%; max-width:420px; height:280px; object-fit:cover; border-radius:10px; box-shadow:0 6px 20px rgba(0,0,0,.15); margin:16px auto 8px; animation:fadeIn .6s ease-in;}
+.proj-slide figcaption {width:90%; max-width:520px; text-align:center; margin:6px 0 14px;}
 .proj-dots {text-align:center; margin:8px 0 18px;}
 .proj-dots label {display:inline-block; width:12px; height:12px; background:gray; border:1px solid #000; border-radius:50%; margin:0 4px; cursor:pointer;}
 input[type="radio"] {display:none;}
-
-
-#proj-slide-1:checked ~ .proj-frame .proj-slider {margin-left:   0;}
+#proj-slide-1:checked ~ .proj-frame .proj-slider {margin-left:0;}
 #proj-slide-2:checked ~ .proj-frame .proj-slider {margin-left:-100%;}
 #proj-slide-3:checked ~ .proj-frame .proj-slider {margin-left:-200%;}
 #proj-slide-4:checked ~ .proj-frame .proj-slider {margin-left:-300%;}
@@ -175,7 +173,6 @@ input[type="radio"] {display:none;}
 #proj-slide-3:checked ~ .proj-dots label[for="proj-slide-3"],
 #proj-slide-4:checked ~ .proj-dots label[for="proj-slide-4"],
 #proj-slide-5:checked ~ .proj-dots label[for="proj-slide-5"] {background:#000;}
-
 .proj-arrows {position:absolute; inset:0; pointer-events:none;}
 .proj-arrows .arrow {position:absolute; top:50%; transform:translateY(-50%); width:38px; height:38px; border-radius:999px; background:#fff; border:2px solid #000; cursor:pointer; pointer-events:auto; display:none;}
 .proj-arrows .prev {left:8px;}
@@ -188,10 +185,7 @@ input[type="radio"] {display:none;}
 #proj-slide-3:checked ~ .proj-frame .proj-arrows .s3,
 #proj-slide-4:checked ~ .proj-frame .proj-arrows .s4,
 #proj-slide-5:checked ~ .proj-frame .proj-arrows .s5 {display:block;}
-
-@keyframes fadeIn {from {opacity:0;} to {opacity:1;}}
-
-
+@keyframes fadeIn {from{opacity:0;} to{opacity:1;}}
 
 
 
