@@ -155,6 +155,24 @@ header{
   .brand img{ height: 44px !important; }
 }
 
+/* Sliders*/
+.proj-slider {width: 90%; margin: 20px auto; overflow: hidden; border: 2px solid black;}
+.proj-slide {width: 100%; text-align: center;}
+.proj-slide img {width: 100%; max-height: 300px; object-fit: cover;}
+
+/* Dots */
+.proj-dots {text-align: center; margin-top: 10px;}
+.proj-dots label {
+  display: inline-block; width: 12px; height: 12px; background: gray; border-radius: 50%; margin: 0 4px; cursor: pointer;}
+input[type="radio"] {display: none;}
+#proj-slide-1:checked ~ .proj-slider { transform: translateX(0); }
+#proj-slide-2:checked ~ .proj-slider { transform: translateX(-100%); }
+#proj-slide-3:checked ~ .proj-slider { transform: translateX(-200%); }
+#proj-slide-4:checked ~ .proj-slider { transform: translateX(-300%); }
+#proj-slide-5:checked ~ .proj-slider { transform: translateX(-400%); }
+
+@keyframes fadeIn {from { opacity: 0; }to { opacity: 1; }}
+
 
 
 
