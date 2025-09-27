@@ -165,10 +165,10 @@ header{
 .proj-dots label {display:inline-block; width:12px; height:12px; background:gray; border:1px solid #000; border-radius:50%; margin:0 4px; cursor:pointer;}
 input[type="radio"] {display:none;}
 #proj-slide-1:checked ~ .proj-frame .proj-slider {transform:translateX(0);}
-#proj-slide-2:checked ~ .proj-frame .proj-slider {transform:translateX(-20%);}
-#proj-slide-3:checked ~ .proj-frame .proj-slider {transform:translateX(-40%);}
-#proj-slide-4:checked ~ .proj-frame .proj-slider {transform:translateX(-60%);}
-#proj-slide-5:checked ~ .proj-frame .proj-slider {transform:translateX(-80%);}
+#proj-slide-2:checked ~ .proj-frame .proj-slider {transform:translateX(-100%);}
+#proj-slide-3:checked ~ .proj-frame .proj-slider {transform:translateX(-200%);}
+#proj-slide-4:checked ~ .proj-frame .proj-slider {transform:translateX(-300%);}
+#proj-slide-5:checked ~ .proj-frame .proj-slider {transform:translateX(-400%);}
 #proj-slide-1:checked ~ .proj-dots label[for="proj-slide-1"],
 #proj-slide-2:checked ~ .proj-dots label[for="proj-slide-2"],
 #proj-slide-3:checked ~ .proj-dots label[for="proj-slide-3"],
@@ -189,6 +189,7 @@ input[type="radio"] {display:none;}
 #proj-slide-5:checked ~ .proj-frame .proj-arrows .s5 {display:block;}
 
 @keyframes fadeIn {from {opacity:0;} to {opacity:1;}}
+
 
 
 
