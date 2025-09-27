@@ -155,26 +155,40 @@ header{
   .brand img{ height: 44px !important; }
 }
 
-/* Sliders*/
-.proj-slider {width: 90%; margin: 20px auto; overflow: hidden; border: 2px solid black;}
-.proj-slide {width: 100%; text-align: center;}
-.proj-slide img {display: block; margin: 0 auto; max-width: 420px; width: 90%; border-radius: 10px; box-shadow: 0 6px 20px rgba(0,0,0,0.15);}
-.proj-slide figcaption {text-align: center; margin-top: 10px;}
+.proj-frame {width: min(560px,94vw); margin:16px auto; border:2px solid black; background:#fff; position:relative; overflow:hidden;}
+.proj-slider {display:block; white-space:nowrap; font-size:0; transition:transform .4s ease;}
+.proj-slide {display:inline-block; width:100%; vertical-align:top; font-size:initial; text-align:center;}
+.proj-slide img {display:block; margin:16px auto 8px; max-width:420px; width:90%; border-radius:10px; box-shadow:0 6px 20px rgba(0,0,0,.15); animation:fadeIn 0.6s ease-in;}
+.proj-slide figcaption {text-align:center; margin:6px 0 14px;}
 
-/* Dots */
-.proj-dots {text-align: center; margin-top: 10px;}
-.proj-dots label {
-  display: inline-block; width: 12px; height: 12px; background: gray; border-radius: 50%; margin: 0 4px; cursor: pointer;}
-input[type="radio"] {display: none;}
-#proj-slide-1:checked ~ .proj-slider { transform: translateX(0); }
-#proj-slide-2:checked ~ .proj-slider { transform: translateX(-100%); }
-#proj-slide-3:checked ~ .proj-slider { transform: translateX(-200%); }
-#proj-slide-4:checked ~ .proj-slider { transform: translateX(-300%); }
-#proj-slide-5:checked ~ .proj-slider { transform: translateX(-400%); }
+.proj-dots {text-align:center; margin:8px 0 18px;}
+.proj-dots label {display:inline-block; width:12px; height:12px; background:gray; border:1px solid #000; border-radius:50%; margin:0 4px; cursor:pointer;}
+input[type="radio"] {display:none;}
+#proj-slide-1:checked ~ .proj-frame .proj-slider {transform:translateX(0);}
+#proj-slide-2:checked ~ .proj-frame .proj-slider {transform:translateX(-100%);}
+#proj-slide-3:checked ~ .proj-frame .proj-slider {transform:translateX(-200%);}
+#proj-slide-4:checked ~ .proj-frame .proj-slider {transform:translateX(-300%);}
+#proj-slide-5:checked ~ .proj-frame .proj-slider {transform:translateX(-400%);}
+#proj-slide-1:checked ~ .proj-dots label[for="proj-slide-1"],
+#proj-slide-2:checked ~ .proj-dots label[for="proj-slide-2"],
+#proj-slide-3:checked ~ .proj-dots label[for="proj-slide-3"],
+#proj-slide-4:checked ~ .proj-dots label[for="proj-slide-4"],
+#proj-slide-5:checked ~ .proj-dots label[for="proj-slide-5"] {background:#000;}
 
-@keyframes fadeIn {from { opacity: 0; }to { opacity: 1; }}
+.proj-arrows {position:absolute; inset:0; pointer-events:none;}
+.proj-arrows .arrow {position:absolute; top:50%; transform:translateY(-50%); width:38px; height:38px; border-radius:999px; background:#fff; border:2px solid #000; cursor:pointer; pointer-events:auto; display:none;}
+.proj-arrows .prev {left:8px;}
+.proj-arrows .next {right:8px;}
+.proj-arrows .arrow::before {content:""; position:absolute; inset:0; margin:auto; width:12px; height:12px; border-right:2px solid #000; border-bottom:2px solid #000;}
+.proj-arrows .prev::before {transform:rotate(135deg);}
+.proj-arrows .next::before {transform:rotate(-45deg);}
+#proj-slide-1:checked ~ .proj-frame .proj-arrows .s1,
+#proj-slide-2:checked ~ .proj-frame .proj-arrows .s2,
+#proj-slide-3:checked ~ .proj-frame .proj-arrows .s3,
+#proj-slide-4:checked ~ .proj-frame .proj-arrows .s4,
+#proj-slide-5:checked ~ .proj-frame .proj-arrows .s5 {display:block;}
 
-
+@keyframes fadeIn {from {opacity:0;} to {opacity:1;}}
 
 
 
