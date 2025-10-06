@@ -11,7 +11,7 @@ The website consists of:
 - **Contact page** – Email, LinkedIn, and other professional links  
 
 ## Structure
-- **HTML Pages:** index.html, Projects.html, Publication.html, Contactinfo.html
+- **HTML Pages:** index.html, Projects.html, Publication.html, Contact.html
 - **CSS:** styles.css
 
 
