@@ -5,14 +5,14 @@ This repository contains my personal website for **COMP 5130 – Internet & Web 
 The site highlights my academic and professional work, including projects, publications, and contact information.
 
 The website consists of:
-- **Home page** – Introduction and overview  
+- **Home page** – Overview with my CV  
 - **Portfolio/Project page** – Selected projects and research summaries
 - **Publications page** – Selected publications with external links  
 - **Contact page** – Email, LinkedIn, and other professional links  
 
 ## Structure
-- **HTML Pages:** index.html, Projects.html, Publication.html
-- **CSS:** styles.css (to be added in a css folder for consistent styling)
+- **HTML Pages:** index.html, Projects.html, Publication.html, Contactinfo.html
+- **CSS:** styles.css
 
 
 ## Features
@@ -24,9 +24,5 @@ The website consists of:
 The website is hosted on **GitHub Pages**:  
 👉 [Live Site Link](https://elyasirankhah.github.io/Personal_Website/)  
 
-## Next Steps
-
-- Adding CSS styling for typography, layout, and color scheme
-- Implement the required “wow feature” (e.g., a CSS-based image gallery, transitions, or animations)
 
 
